@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/dotnet/runtime:9.0.0
+FROM mcr.microsoft.com/dotnet/runtime:9.0.0@sha256:b7afeeb945d9cfaf215e8262c5e17ffcba4e4397b7a6fb37610d4c3a30b85906
