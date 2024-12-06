@@ -7,7 +7,6 @@
       "matchDatasources": [
         "docker"
       ],
-      "matchUpdateTypes": ["major", "minor", "patch"]
       "enabled": true
     }
   ]
