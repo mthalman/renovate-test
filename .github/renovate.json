@@ -10,6 +10,9 @@
       "matchDatasources": [
         "docker"
       ],
+      "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
+	    "matchPaths": ["UnitTests.proj"],
+	    "versioning": "regex:^\D*-(?<major>\\d+)\\.(?<minor>\\d+)(?:-(?<compatibility>.+)$",
       "enabled": true
     }
   ]
