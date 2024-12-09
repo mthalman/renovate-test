@@ -5,6 +5,13 @@
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "versioning": {
+    "buildtoolsPrereqsCustomVersion": {
+      "description": "Custom versioning for Docker tags with embedded versions",
+      "regex": "\\D+-(?<major>\\d+)(\\.(?<minor>\\d+)?-\\S+",
+      "type": "version"
+    }
+  },
   "customManagers": [
     {
       "customType": "regex",
@@ -24,7 +31,7 @@
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "buildtoolsPrereqsCustomVersion"
     }
   ]
 }
