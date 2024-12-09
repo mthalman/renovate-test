@@ -14,7 +14,7 @@
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
-      "versioningTemplate": "regex:\\D+-(?<major>\\d+)(\\.(?<minor>\\d+))?-\\S+"
+      "versioningTemplate": "loose"
     }
   ]
 }
