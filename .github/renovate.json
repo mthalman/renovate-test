@@ -21,16 +21,6 @@
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
-      "versioningTemplate": "semver"
-    },
-    {
-      "customType": "regex",
-      "fileMatch": ["versions.json"],
-      "matchStrings": [
-        "\"omnisharp\":\\s*\"(?<currentValue>[^\"]+)\""
-      ],
-      "datasourceTemplate": "docker",
-      "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
       "versioningTemplate": "buildtoolsPrereqsCustomVersion"
     }
   ]
