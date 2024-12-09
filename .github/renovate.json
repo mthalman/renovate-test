@@ -7,6 +7,7 @@
   "prConcurrentLimit": 0,
   "customManagers": [
     {
+      "customType": "regex",
       "fileMatch": ["UnitTests.proj"],
       "matchStrings": [
         "(?<depName>mcr.microsoft.com/dotnet-buildtools/prereqs):\\D+-(?<currentValue>\\d+\\.\\d+)(-\\D+)?"
