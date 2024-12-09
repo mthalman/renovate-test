@@ -9,9 +9,10 @@
     {
       "fileMatch": ["UnitTests.proj"],
       "matchStrings": [
-        "mcr.microsoft.com/dotnet-buildtools/prereqs:\\D+-(?<currentValue>\\d+\\.\\d+)(-\\D+)?"
+        "(?<depName>mcr.microsoft.com/dotnet-buildtools/prereqs):\\D+-(?<currentValue>\\d+\\.\\d+)(-\\D+)?"
       ],
       "datasourceTemplate": "docker",
+      "depNameTemplate": "{{{depName}}}",
       "versioningTemplate": "semver"
     }
   ]
