@@ -22,8 +22,8 @@
       "matchStrings": [
         "\"omnisharp\":\\s*\"(?<currentValue>[^\"]+)\""
       ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "OmniSharp/omnisharp-roslyn",
+      "datasourceTemplate": "docker",
+      "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
       "versioningTemplate": "semver"
     }
   ]
