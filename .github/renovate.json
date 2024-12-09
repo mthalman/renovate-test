@@ -5,15 +5,14 @@
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
-  "packageRules": [
+  "customManagers": [
     {
-      "matchDatasources": [
-        "docker"
+      "fileMatch": ["UnitTests.proj"],
+      "matchStrings": [
+        "mcr.microsoft.com/dotnet-buildtools/prereqs:\\D+-(?<currentValue>\\d+\\.\\d+)(-\\D+)?"
       ],
-      "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
-	    "matchPaths": ["UnitTests.proj"],
-	    "versioning": "regex:^\\D*-(?<major>\\d+)\\.(?<minor>\\d+)(?:-(?<compatibility>.+))$",
-      "enabled": true
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "semver"
     }
   ]
 }
