@@ -12,7 +12,7 @@
         "(?<depName>mcr.microsoft.com/dotnet-buildtools/prereqs):\\D+-(?<currentValue>\\d+\\.\\d+)(-\\D+)?"
       ],
       "datasourceTemplate": "docker",
-      "depNameTemplate": "{{{depName}}}",
+      "depNameTemplate": "{{depName}}",
       "versioningTemplate": "semver"
     }
   ]
