@@ -9,7 +9,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
-      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d+(\\.\\d+)?)[^\"]*$",
+      "versionCompatibility": "^(?<compatibility>\\D+-(?<version>\\d+(\\.\\d+)?)[^\"]*)$",
       "versioning": "docker"
     }
   ],
