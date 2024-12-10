@@ -1,5 +1,4 @@
 {
-  "repositories": [ "mthalman/renovate-test" ],
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard"
