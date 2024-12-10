@@ -5,6 +5,14 @@
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
+      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d(\\d)?)-\\S+$"
+      "versioning": "semver"
+    }
+  ]
   "customManagers": [
     {
       "customType": "regex",
@@ -13,8 +21,7 @@
         "mcr.microsoft.com/dotnet-buildtools/prereqs:\\D+-(?<currentValue>\\d+(\\.\\d+)?)(-\\S+)?"
       ],
       "datasourceTemplate": "docker",
-      "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs",
-      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d(\\d)?)-\\S+$"
+      "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs"
     }
   ]
 }
