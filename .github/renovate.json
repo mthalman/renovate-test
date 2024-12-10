@@ -9,7 +9,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
-      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d(\\d)?)$",
+      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d(\\d)?)[^\"]*$",
       "versioning": "semver"
     }
   ],
@@ -18,7 +18,7 @@
       "customType": "regex",
       "fileMatch": ["UnitTests.proj"],
       "matchStrings": [
-        "mcr.microsoft.com/dotnet-buildtools/prereqs:(?<currentValue>\\D+-\\d+(\\.\\d+)?)(-\\S+)?"
+        "mcr.microsoft.com/dotnet-buildtools/prereqs:(?<currentValue>\\D+-\\d+(\\.\\d+)?)[^\"]*"
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs"
