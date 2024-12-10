@@ -18,7 +18,7 @@
       "customType": "regex",
       "fileMatch": ["UnitTests.proj"],
       "matchStrings": [
-        "mcr.microsoft.com/dotnet-buildtools/prereqs:(?<currentValue>\\D+-\\d+(\\.\\d+)?)[^\"]*"
+        "mcr.microsoft.com/dotnet-buildtools/prereqs:(?<currentValue>\\D+-\\d+(\\.\\d+)?).*"
       ],
       "datasourceTemplate": "docker",
       "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs"
