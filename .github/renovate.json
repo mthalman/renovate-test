@@ -12,7 +12,7 @@
       "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d(\\d)?)-\\S+$"
       "versioning": "semver"
     }
-  ]
+  ],
   "customManagers": [
     {
       "customType": "regex",
