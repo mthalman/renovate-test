@@ -1,1 +1,1 @@
-FROM mcr.microsoft.com/dotnet/runtime:8.0.0
+FROM mcr.microsoft.com/dotnet-buildtools/prereqs:alpine-3.20-amd64
