@@ -18,6 +18,7 @@
       "matchStrings": [
         "(?<depName>debian):(?<currentValue>\\d+).*"
       ],
+      "autoReplaceStringTemplate": "{{{depName}}}:{{{newValue}}}@{{{newDigest}}}",
       "datasourceTemplate": "docker"
     }
   ]
