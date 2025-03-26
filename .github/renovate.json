@@ -8,20 +8,17 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPackageNames": ["mcr.microsoft.com/dotnet-buildtools/prereqs"],
-      "versionCompatibility": "^(?<compatibility>\\D+)-(?<version>\\d+(\\.\\d+)?).*$",
-      "versioning": "docker"
+      "pinDigests": true
     }
   ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["UnitTests.proj"],
+      "fileMatch": ["versions.json"],
       "matchStrings": [
-        "mcr.microsoft.com/dotnet-buildtools/prereqs:(?<currentValue>\\D+-\\d+(\\.\\d+)?).*"
+        "(?<depName>debian):(?<currentValue>\\d+).*"
       ],
-      "datasourceTemplate": "docker",
-      "depNameTemplate": "mcr.microsoft.com/dotnet-buildtools/prereqs"
+      "datasourceTemplate": "docker"
     }
   ]
 }
