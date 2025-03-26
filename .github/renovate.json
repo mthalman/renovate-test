@@ -20,6 +20,20 @@
       ],
       "autoReplaceStringTemplate": "{{{depName}}}:{{{newValue}}}@{{{newDigest}}}",
       "datasourceTemplate": "docker"
+    },
+    {
+      "description": "Custom package manager for docker-image key in .circleci/config.yml",
+      "fileMatch": [
+        "^.circleci/config.yml$",
+        "(^|/).circleci/config-cimg-base.yml$"
+      ],
+      "matchStrings": [
+        "docker-image:\\s*(?<depName>.*?):(?<currentValue>[^@\\s]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?"
+      ],
+      "datasourceTemplate": "docker",
+      "autoReplaceStringTemplate": "docker-image: {{{depName}}}:{{{newValue}}}@{{{newDigest}}}",
+      "versioningTemplate": "docker",
+      "depTypeTemplate": "docker"
     }
   ]
 }
