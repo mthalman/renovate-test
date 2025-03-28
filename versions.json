@@ -1,5 +1,5 @@
 {
   "versions": {
-    "image": "debian:11@sha256:5c028c19adaab78491711830600749729a8276b9839416716d5d7339ec3d7215"
+    "image": "debian:11"
   }
 }
