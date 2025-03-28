@@ -1,5 +1,5 @@
 {
   "versions": {
-    "image": "debian:11"
+    "image": "debian:12"
   }
 }
